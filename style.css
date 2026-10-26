@@ -15,6 +15,10 @@
     --cor-fundo-dica:#fff8e1;
     --cor-borda-dica:#f0ad4e;
    --cor-borda-tabela:#e0d3c4;
+   --cor-texto: #333333;
+   --cor-texto-creme:#e6d7c3;
+   --cor-marrom-hover:#935f3a;
+
 }
 
 /* regra de formatação */
@@ -42,11 +46,20 @@ nav{
     /* margin-left: 30px; */
     /*margin:1px 0px 0px 30px; /* ordem em sentido horário top,right,bottom e left*/
     /* Margin:1px se vc aplicar só um deles ele vai ser aplicado para todos e se tiver duas especificações ele vai jogar isso para os contrários deles*/
-    padding: 12px;
+    padding:  20px 12px;
     text-align: center;
 
 }
+nav a{
+    color:var(--cor-branca);
+    text-decoration:none;
+    padding: 8px 14px;
+    border-radius: 6px;
 
+}
+nav a:hover{
+    background-color:var(--cor-marrom-hover);
+}
 /*
 font-family - propriedade
 Arial, Helvetica, sans-serif - valor da propriedade
@@ -81,6 +94,21 @@ section p{
 
 
 }
+
+section ul, section ol{
+    margin-left: 24px;
+    margin-bottom: 12px;
+
+}
+
+section li{
+    margin-bottom: 5px;
+}
+section hr{
+    border-top: 2px dotted var(--cor-marrom-médio);
+    margin: 10px 0px; 
+}
+
 /* Criar uma classe em CSS */
 .dica{
     background-color:var(--cor-fundo-dica);
