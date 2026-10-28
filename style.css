@@ -2,6 +2,11 @@
 *{
     margin: 0;  /* Margem externa (da borda para fora)*/
     padding: 0; /* Margem interna (da borda para dentro)*/
+    box-sizing: border-box;
+    /*
+    content-box: soma todos os espaços e expande
+    border-box: soma todos os espaços e reduz (conteúdo + espaços)
+    */
 }
 
 /* Variáveis para a paleta de cores */
@@ -108,6 +113,9 @@ section hr{
     border-top: 2px dotted var(--cor-marrom-médio);
     margin: 10px 0px; 
 }
+section img{
+    width:100%;
+}
 
 /* Criar uma classe em CSS */
 .dica{
@@ -134,7 +142,37 @@ th{
     background-color: var(--cor-marrom-escuro);
     color:var(--cor-branca);
 }
+.horário-funcionamento th{
+  border:none;
+}
+.horário-funcionamento td{
+  border:none;
+  border-bottom: 1px solid var(--cor-borda-tabela);
+}
 
+/* Formatação do formulário */
+ form label{
+    display:block; /* transforma a tag em um bloco. Antes label era in line */
+    margin: 10px 0px 4px;
+    color:var(--cor-marrom-escuro);
 
+ }
 
-
+ form input, form textarea{
+    width:100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-borda-tabela);
+ }
+form button{
+    margin-top: 15px;
+    border:none;
+    background-color: var(--cor-marrom-médio);
+    color:var(--cor-branca);
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor:pointer;      /* muda o cursor para a mãozinha */
+}
+form button:hover{
+    background-color:var(--cor-marrom-hover);
+}
