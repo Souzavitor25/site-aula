@@ -23,6 +23,7 @@
    --cor-texto: #333333;
    --cor-texto-creme:#e6d7c3;
    --cor-marrom-hover:#935f3a;
+   --cor-verde-whatsapp:#25d366;
 
 }
 
@@ -175,4 +176,32 @@ form button{
 }
 form button:hover{
     background-color:var(--cor-marrom-hover);
+}
+/* Formatação da seção delivery usando o id */
+#delivery{
+    text-align: center;     /* centralizar o texto */
+    padding:40px 20px;
+    background:linear-gradient(120deg, var(--cor-marrom-escuro),var(--cor-marrom-médio));
+    color: var(--cor-branca);
+}
+#delivery h2{
+    margin-bottom:10px;
+    border-bottom:none;    /* tirar a borda existente */
+    font-size:20px;
+    color:var(--cor-branca);
+
+}
+.botao{
+    background-color: var(--cor-branca);
+    color: var(--cor-marrom-escuro);
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius:20px;
+    display: inline-block; /* combina o comportamento inline com block*/
+      
+}
+.botao:hover{
+    background-color:var(--cor-verde-whatsapp);
+    transform:translateY(-3px);  /* movimenta o elemento em uma direção X ou Y */
+    
 }
