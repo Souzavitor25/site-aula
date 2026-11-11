@@ -12,7 +12,7 @@
 /* Variáveis para a paleta de cores */
 :root{
     --cor-marrom-escuro: #4e342e;
-    --cor-marrom-médio:#b07d52;
+    --cor-marrom-medio:#b07d52;
     --cor-fundo-página:#f5efe6;
     --cor-branca:white;
     --cor-fundo-seção:#ffffff;
@@ -47,7 +47,7 @@ p{
     font-size: 18px;
 }
 nav{
-    background-color:var(--cor-marrom-médio);
+    background-color:var(--cor-marrom-medio);
     /* margin-top: 1px; */
     /* margin-left: 30px; */
     /*margin:1px 0px 0px 30px; /* ordem em sentido horário top,right,bottom e left*/
@@ -90,7 +90,7 @@ section{
 }
 section h2{
     color: var(--cor-marrom-escuro);
-    border-bottom: 3px solid var(--cor-marrom-médio);
+    border-bottom: 3px solid var(--cor-marrom-medio);
     margin-bottom: 20px;
     padding-bottom:8px;
 }
@@ -111,7 +111,7 @@ section li{
     margin-bottom: 5px;
 }
 section hr{
-    border-top: 2px dotted var(--cor-marrom-médio);
+    border-top: 2px dotted var(--cor-marrom-medio);
     margin: 10px 0px; 
 }
 section img{
@@ -168,7 +168,7 @@ th{
 form button{
     margin-top: 15px;
     border:none;
-    background-color: var(--cor-marrom-médio);
+    background-color: var(--cor-marrom-medio);
     color:var(--cor-branca);
     padding: 12px 24px;
     border-radius: 6px;
@@ -181,7 +181,7 @@ form button:hover{
 #delivery{
     text-align: center;     /* centralizar o texto */
     padding:40px 20px;
-    background:linear-gradient(120deg, var(--cor-marrom-escuro),var(--cor-marrom-médio));
+    background:linear-gradient(120deg, var(--cor-marrom-escuro),var(--cor-marrom-medio));
     color: var(--cor-branca);
 }
 #delivery h2{
