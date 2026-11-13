@@ -72,7 +72,7 @@ Arial, Helvetica, sans-serif - valor da propriedade
 */
 
 main{
-    width: 900px;  /*Largura do bloco*/
+    max-width: 900px;  /*Largura do bloco*/ /* FOI MUDADO DE WIDTH PARA MAX-WIDTH */
     margin:0px auto;
 }
 
