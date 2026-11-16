@@ -120,6 +120,24 @@
     background-color: var(--cor-fundo-vegano);
 }
 
+/* Regra para formatação da galeria */
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    grid-template-areas:
+    "destaque destaque f2"
+    "destaque destaque f3"
+    "f4        f5      f6";
+    
+    
+}
+.foto:nth-child(1) {grid-area: destaque; }
+.foto:nth-child(2) {grid-area: f2; }
+.foto:nth-child(3) {grid-area: f3; }
+.foto:nth-child(4) {grid-area: f4; }
+.foto:nth-child(5) {grid-area: f5; }
+.foto:nth-child(6) {grid-area: f6; }
 
 
 /* Regras para layout responsivo */
