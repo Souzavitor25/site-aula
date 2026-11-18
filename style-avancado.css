@@ -139,6 +139,41 @@
 .foto:nth-child(5) {grid-area: f5; }
 .foto:nth-child(6) {grid-area: f6; }
 
+.foto{
+    position: relative;
+    overflow:hidden;            /* esconde a parte da imagem que cresce com o zoom */
+    border-radius: 10px;
+    cursor:zoom-in;             /* altera o cursor para indicar possibilidade de zoom */
+}
+.foto img{
+    width:100%;   /* largura */
+    height:100%;  /* altura */
+    object-fit: cover; /*Preenche o espaço disponível mantendo a proporção */
+    display:block;  /* Converte o bloco. Por padrão, img é inline */
+    transition:transform 0.5s; /* Efeito suave de meio segundo */
+}
+.foto:hover img{
+    transform: scale(1.1); /* aumenta a imagem em 10% do seu tamanho original */
+}
+.foto figcaption{
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding: 10px 14px;
+    background: linear-gradient(transparent,rgba(59,43,34,0.9));
+    color:var(--cor-branca);
+    font-weight:bold;
+    transform: translateY(100%);       /* desloca a legenda verticalmente */
+    transition: transform 0.3s;        /* controla a suavidade da animação*/
+}
+.foto:hover figcaption{
+    transform: translateY(0);       /* desloca a legenda para a posição inicial */
+}
+
+
+
+
 
 /* Regras para layout responsivo */
 /* media queries */
